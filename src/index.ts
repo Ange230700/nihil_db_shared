@@ -1,4 +1,4 @@
-// shared\index.ts
+// shared\src\index.ts
 
 export * from "./enums";
 export * from "./types";
