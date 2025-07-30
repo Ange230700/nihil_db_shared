@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"No test needed here at the moment\"",
     "lint": "eslint .",
-    "clean": "rm -rf dist node_modules",
+    "clean": "rm -rf dist",
     "prisma:generate": "echo 'No prisma generate needed in shared'"
   }
 }

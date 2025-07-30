@@ -14,7 +14,7 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "npm run clean",
-        "cwd": "user"
+        "cwd": "shared"
       }
     }
   }
