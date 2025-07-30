@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"No test needed here at the moment\"",
     "lint": "eslint .",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "prisma:generate": "echo 'No prisma generate needed in shared'"
   }
 }
