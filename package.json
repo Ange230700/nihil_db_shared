@@ -1,0 +1,13 @@
+{
+  "name": "@nihil_databases/shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No test needed here at the moment\"",
+    "lint": "eslint .",
+    "clean": "rm -rf dist node_modules",
+    "prisma:generate": "echo 'No prisma generate needed in shared'"
+  }
+}
