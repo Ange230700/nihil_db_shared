@@ -1,9 +1,12 @@
 {
-  "name": "@nihil_databases/shared",
+  "name": "nihildbshared",
   "version": "1.0.0",
   "main": "index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"No test needed here at the moment\"",
     "lint": "eslint .",

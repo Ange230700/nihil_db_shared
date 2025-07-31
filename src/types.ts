@@ -1,6 +1,6 @@
 // shared\types.ts
 
-import { UserRole } from "@nihil/shared/enums";
+import { UserRole } from "nihildbshared/enums";
 
 export interface JWTUserPayload {
   id: string;

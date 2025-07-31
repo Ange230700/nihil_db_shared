@@ -1,5 +1,5 @@
 {
-  "name": "@nihil_databases/shared",
+  "name": "nihildbshared",
   "root": "shared",
   "projectType": "library",
   "targets": {
