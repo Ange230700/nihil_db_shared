@@ -16,6 +16,15 @@
         "command": "npm run clean",
         "cwd": "shared"
       }
+    },
+    "publish:package": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run publish:package",
+        "cwd": "shared",
+        "env": { "NODE_ENV": "prod" }
+      },
+      "dependsOn": ["build"]
     }
   }
 }
