@@ -8,6 +8,11 @@
       "options": {
         "command": "tsc -b",
         "cwd": "shared"
+      },
+      "configurations": {
+        "ci": {
+          "command": "npm run build -- --no-cache"
+        }
       }
     },
     "clean": {
