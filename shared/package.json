@@ -1,0 +1,24 @@
+{
+  "name": "nihildbshared",
+  "version": "1.0.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "test": "echo \"No test needed here at the moment\"",
+    "prisma:generate": "echo 'No prisma generate needed in shared'",
+    "publish:package": "npm publish --access public"
+  }
+}

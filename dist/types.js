@@ -1,0 +1,2 @@
+// shared\types.ts
+export {};

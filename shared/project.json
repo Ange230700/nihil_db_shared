@@ -1,0 +1,35 @@
+{
+  "name": "nihildbshared",
+  "root": "shared",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc -b",
+        "cwd": "shared"
+      },
+      "configurations": {
+        "ci": {
+          "command": "npm run build -- --no-cache"
+        }
+      }
+    },
+    "clean": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run clean",
+        "cwd": "shared"
+      }
+    },
+    "publish:package": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run publish:package",
+        "cwd": "shared",
+        "env": { "NODE_ENV": "prod" }
+      },
+      "dependsOn": ["build"]
+    }
+  }
+}
